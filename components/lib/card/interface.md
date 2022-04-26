@@ -4,6 +4,6 @@
 |----|----|----|----|----|
 |width|卡片宽度|number|false| - |
 |imgSrc|图片地址|string|false| - |
-|imgHeight|图片高度|string|false| - |
+|imgHeight|图片高度|number|false| - |
 |summary|卡片概述|string/slot|false| - |
 |footer|卡片底部|slot|false| - |
