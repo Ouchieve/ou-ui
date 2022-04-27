@@ -3,7 +3,7 @@
         <img alt="Vue logo" src="./assets/logo.png">
         <Demo/>
         <Card img-src="java.jpg" summary="剑指Java面试-offer直通车 百度资深面试官授课"></Card>
-      <br>
+        <br>
         <Card img-src="c++.jpg" summary="C++语言系统化精讲 重塑你的编程思想 打造坚实的开发基础">
             <template v-slot:footer>
                 <div class="footer">
@@ -12,7 +12,7 @@
                 </div>
             </template>
         </Card>
-      <br>
+        <br>
         <Card img-src="javascript.jpg" :imgHeight="280" :width="500">
             本路线旨在帮助向快速掌握javascript应用的工程师,全方位多角度带你升级。
             <template v-slot:footer>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-
     export default {
         name: 'App',
     }
