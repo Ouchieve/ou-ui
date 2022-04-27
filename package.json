@@ -1,12 +1,24 @@
 {
-  "name": "vue2-library-starter",
+  "name": "ou-ui",
   "version": "0.1.0",
-  "private": true,
+  "description": "组件库示例",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "vue2",
+    "ui",
+    "vue"
+  ],
+  "author": "Ouchieve Jone",
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run build:js && npm run build:css",
     "lint": "vue-cli-service lint",
-    "build:js": "webpack --config webpack.component.js"
+    "build:js": "webpack --config webpack.component.js",
+    "build:css": "gulp sass"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -20,7 +32,11 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "glob": "^8.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.1",
+    "sass": "^1.51.0",
     "sass-loader": "^5.0.1",
     "vue-loader": "^15.0.0",
     "vue-template-compiler": "^2.6.11",
