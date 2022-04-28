@@ -19,8 +19,9 @@
     "lint": "vue-cli-service lint",
     "build:js": "webpack --config webpack.component.js",
     "build:css": "gulp sass",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev vuepress",
+    "docs:build": "vuepress build vuepress",
+    "deploy": "deploy.cmd"
   },
   "dependencies": {
     "core-js": "^3.6.5",
